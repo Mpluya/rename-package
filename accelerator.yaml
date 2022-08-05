@@ -15,7 +15,7 @@ accelerator:
 engine:
   merge:
   - exclude: [ '**/*.java', '.project', '.classpath' , '.settings/**', 'k8s-resource.yml' ]
-  - include: [ '**/*.java' ] 
+  - include: [ '**/*' ]
     chain:
     - type: OpenRewriteRecipe
       recipe: org.openrewrite.java.ChangePackage
